@@ -1,0 +1,14 @@
+FROM THE INTRODUCTORY VIDEO:
+ - target = emission
+ - For each location with lat and lon we predict emission in a particular year and week
+ - Target variable is skewed to the right. Regression target have to be a normal distribution and other rules to abide by. Use method to reset it
+ - Outliers. How to deal with them.
+ - No imbalance in the data in years.
+ - No imbalance in week data except for three weeks.
+ - Correlation - N20 has more correlation. Why is it more? It is useful in generating more features
+ - There is quite a pattern across years in spefic weeks with higher emissions in week 20 to 25. Why is this the case? Answer the question to get more idea on the features that will improve performance of the model.
+ - We can create features from time related data from the rolling average. This feature can really bring more to the model.
+ - Missing values. How do we deal with them? The instructor used fill(0). Is it a sufficient method?
+ - Model - use the default random forest and modify to XGBoost.
+ - Evaluation from the model, the higher emission the model struggles to perform the prediction. One suggested method to fix by instructor is drop the outliers or deal with outliers.
+ - Look at the feature importances to see if they add value to the model.
